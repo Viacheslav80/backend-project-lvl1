@@ -11,8 +11,10 @@ export const question = (count, name) => {
   const ans = readlineSync.question(`Question: ${number} `);
   const rest = number % 2;
   const trueAns = (rest > 0) ? 'no' : 'yes';
-  if (((rest < 1) && (ans === 'yes')) || ((rest > 0) && (ans === 'no'))) console.log('Correct!'); else 
-    return console.log(`"${ans}" is wrong answer ;(. Correct answer was "${trueAns}". Let's try again, ${name}!`);
-  if (count === 1) return console.log(`Congratulations, ${name}!`);
+  if (((rest < 1) && (ans === 'yes')) || ((rest > 0) && (ans === 'no'))) console.log('Correct!'); else {
+    console.log(`"${ans}" is wrong answer ;(. Correct answer was "${trueAns}". Let's try again, ${name}!`);
+    return;
+  }
+  if (count === 1) { console.log(`Congratulations, ${name}!`); return; }
   question(count - 1, name);
 };
