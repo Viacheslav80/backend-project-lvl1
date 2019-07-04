@@ -6,7 +6,7 @@ export const hello = () => {
   console.log(`Hello, ${actualName}!`);
   return actualName;
 };
-export const question = (count, name) => {
+export const gameOne = (count, name) => {
   const number = (Math.floor(Math.random() * 15) + 1);
   const ans = readlineSync.question(`Question: ${number} `);
   const rest = number % 2;
@@ -16,5 +16,5 @@ export const question = (count, name) => {
     return;
   }
   if (count === 1) { console.log(`Congratulations, ${name}!`); return; }
-  question(count - 1, name);
+  gameOne(count - 1, name);
 };
