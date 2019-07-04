@@ -1,12 +1,13 @@
 
 import readlineSync from 'readline-sync';
 
+export const welcome = () => console.log('Welcome to the Brain Games!');
 export const hello = () => {
   const actualName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${actualName}!`);
   return actualName;
 };
-export const gameOne = (count, name) => {
+const executionGame1 = (count, name) => {
   const number = (Math.floor(Math.random() * 15) + 1);
   const ans = readlineSync.question(`Question: ${number} `);
   const rest = number % 2;
@@ -16,5 +17,11 @@ export const gameOne = (count, name) => {
     return;
   }
   if (count === 1) { console.log(`Congratulations, ${name}!`); return; }
-  gameOne(count - 1, name);
+  executionGame1(count - 1, name);
+};
+export const gameOne = () => {
+  welcome();
+  console.log('Answer "yes" if number even otherwise answer "no"');
+  console.log('');
+  executionGame1(3, hello());
 };
