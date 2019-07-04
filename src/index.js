@@ -9,7 +9,8 @@ export const hello = () => {
 };
 const executionGame1 = (count, name) => {
   const number = (Math.floor(Math.random() * 15) + 1);
-  const ans = readlineSync.question(`Question: ${number} `);
+  console.log(`Question: ${number} `);
+  const ans = readlineSync.question(`Your answer: `);
   const rest = number % 2;
   const trueAns = (rest > 0) ? 'no' : 'yes';
   if (((rest < 1) && (ans === 'yes')) || ((rest > 0) && (ans === 'no'))) console.log('Correct!'); else {
