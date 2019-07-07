@@ -2,5 +2,4 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/bf47194235807c007714/test_coverage)](https://codeclimate.com/github/Viacheslav80/backend-project-lvl1/test_coverage)
 [![Build Status](https://travis-ci.org/Viacheslav80/backend-project-lvl1.svg?branch=master)](https://travis-ci.org/Viacheslav80/backend-project-lvl1)
 
-[![asciicast](https://asciinema.org/a/3VNfaAVPPqRkt43f5zcHvP9Gr.svg)](https://asciinema.org/a/3VNfaAVPPqRkt43f5zcHvP9Gr)
-
+[![asciicast](https://asciinema.org/a/sboVSSBi785N7q2u6ZdoUAJ7M.svg)](https://asciinema.org/a/sboVSSBi785N7q2u6ZdoUAJ7M)
