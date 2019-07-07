@@ -1,8 +1,7 @@
-import { hello, welcome, executionGame } from '..'; 
+import { hello, welcome, executionGame } from '..';
 
-
-export const gameOne = () => {
-  welcome(); 
+export default () => {
+  welcome();
   console.log('Answer "yes" if number even otherwise answer "no"');
   console.log('');
   const name = hello();
@@ -14,4 +13,3 @@ export const gameOne = () => {
   };
   executionGame(3, name, data);
 };
- 

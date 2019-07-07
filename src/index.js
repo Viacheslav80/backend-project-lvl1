@@ -19,5 +19,3 @@ export const executionGame = (count, name, data) => {
   if (count === 1) { console.log(`Congratulations, ${name}!`); return; }
   executionGame(count - 1, name, data);
 };
-
-

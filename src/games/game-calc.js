@@ -1,6 +1,6 @@
 import { hello, welcome, executionGame } from '..';
 
-export const gameTwo = () => {
+export default () => {
   welcome();
   console.log('What is the result of the expression?');
   console.log('');
@@ -15,10 +15,9 @@ export const gameTwo = () => {
       case 0: trueAns = String(num1 + num2); question = `${num1} + ${num2}`; break;
       case 1: trueAns = String(num1 - num2); question = `${num1} - ${num2}`; break;
       case 2: trueAns = String(num1 * num2); question = `${num1} * ${num2}`; break;
-      default: trueAns = num2 * num3; question = `"${num1}" * "${num2}"`; break;
+      default: break;
     }
     return request => ((request === 'question') ? question : trueAns);
   };
   executionGame(3, name, data);
 };
-       
