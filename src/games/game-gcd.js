@@ -12,7 +12,7 @@ export default () => {
     const maxNumber = (num1 > num2) ? num1 : num2;
     const question = `${num1}  ${num2}`;
     let i = minNumber;
-    for (; i > 0; i -= i) {
+    for (; i > 0; i -= 1) {
       if ((minNumber % i === 0) && (maxNumber % i === 0)) break;
     }
     const trueAns = String(i);
