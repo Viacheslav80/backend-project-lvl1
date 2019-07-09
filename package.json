@@ -1,7 +1,7 @@
 {
   "name": "my_project_1",
   "version": "1.0.0",
-  "description": "",
+  "description": "console games for the brain",
   "main": "index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
@@ -23,6 +23,11 @@
     "type": "git",
     "url": "git+https://github.com/Viacheslav80/backend-project-lvl1.git"
   },
+  "keywords": [
+    "games",
+    "console",
+    "brain"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
