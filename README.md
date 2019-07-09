@@ -4,17 +4,16 @@
 
 Game-even
 
-[![asciicast](https://asciinema.org/a/szpOvztP0S1D0juWLtlIiD1Up.svg)](https://asciinema.org/a/szpOvztP0S1D0juWLtlIiD1Up)
+[![asciicast](https://asciinema.org/a/vBTFWbB9K2JPIDb1Tmmd6SyRC.svg)](https://asciinema.org/a/vBTFWbB9K2JPIDb1Tmmd6SyRC)
 
 Game-calc
-[![asciicast](https://asciinema.org/a/MjWg2A8v5nM0cBsg7fRnE2dce.svg)](https://asciinema.org/a/MjWg2A8v5nM0cBsg7fRnE2dce)
+[![asciicast](https://asciinema.org/a/OIE3Cg1fgLzciJ1RuY2UDntGA.svg)](https://asciinema.org/a/OIE3Cg1fgLzciJ1RuY2UDntGA)
 
 Game-gcd
-[![asciicast](https://asciinema.org/a/efMOVBO3V1IiECgFm2q5qpn3W.svg)](https://asciinema.org/a/efMOVBO3V1IiECgFm2q5qpn3W)
+[![asciicast](https://asciinema.org/a/BvvkOI8CBH7whxXThbeFRb8KS.svg)](https://asciinema.org/a/BvvkOI8CBH7whxXThbeFRb8KS)
 
 Game-progression
-[![asciicast](https://asciinema.org/a/Os3BRxrMwWcSm6YRrurHZMeFR.svg)](https://asciinema.org/a/Os3BRxrMwWcSm6YRrurHZMeFR)
+[![asciicast](https://asciinema.org/a/0282m2FikQYLO5UcZZiHJJIbg.svg)](https://asciinema.org/a/0282m2FikQYLO5UcZZiHJJIbg)
 
 Game-prime
-[![asciicast](https://asciinema.org/a/GLpN8E5VMqGEMxrl140uxXpNz.svg)](https://asciinema.org/a/GLpN8E5VMqGEMxrl140uxXpNz)
-
+[![asciicast](https://asciinema.org/a/okg3B7aIP1rsNnKURO55R9qVO.svg)](https://asciinema.org/a/okg3B7aIP1rsNnKURO55R9qVO)
