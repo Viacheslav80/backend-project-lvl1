@@ -11,8 +11,8 @@ export default () => {
     const question = `${number}`;
     for (let i = 2; i < number; i += 1) {
       if (number % i === 0) trueAns = 'no';
-    };
-    return request => (request === 'question') ? question : trueAns;
+    }
+    return request => ((request === 'question') ? question : trueAns);
   };
   executionGame(3, name, data);
 };
