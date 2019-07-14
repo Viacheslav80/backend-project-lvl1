@@ -1,7 +1,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/bf47194235807c007714/maintainability)](https://codeclimate.com/github/Viacheslav80/backend-project-lvl1/maintainability)
 
-[![Build Status](https://travis-ci.org/Viacheslav80/backend-project-lvl1.svg?branch=master)](https://travis-c
-i.org/Viacheslav80/backend-project-lvl1)
+[![Build Status](https://travis-ci.org/Viacheslav80/backend-project-lvl1.svg?branch=master)](https://travis-ci.org/Viacheslav80/backend-project-lvl1)
 
 Game-even
 
