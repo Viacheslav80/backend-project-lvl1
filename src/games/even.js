@@ -7,5 +7,6 @@ export default () => {
     const trueAnswer = isEven(question);
     return request => ((request === 'question') ? question : trueAnswer);
   };
-  executionGame(3, textTask, data);
+  const rounds = 3;
+  executionGame(rounds, textTask, data);
 };
