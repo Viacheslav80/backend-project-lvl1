@@ -9,16 +9,16 @@ export default () => {
     const num1 = getRandomInRange(1, 15);
     const num2 = getRandomInRange(1, 15);
     const getNumOperation = getRandomInRange(0, 2);
-    const expression = cons(getNumOperation, cons(num1, num2));
+    const expressions = cons((num1 - num2), cons((num1 + num2), (num2 * num2)));
     let question;
     let trueAnswer;
-    switch (car(expression)) {
-      case 0: trueAnswer = String(car(cdr(expression)) + cdr(cdr(expression)));
-        question = `${car(cdr(expression))} + ${cdr(cdr(expression))}`; break;
-      case 1: trueAnswer = String(car(cdr(expression)) - cdr(cdr(expression)));
-        question = `${car(cdr(expression))} - ${cdr(cdr(expression))}`; break;
-      case 2: trueAnswer = String(car(cdr(expression)) * cdr(cdr(expression)));
-        question = `${car(cdr(expression))} * ${cdr(cdr(expression))}`; break;
+    switch (getNumOperation) {
+      case 0: trueAnswer = String(car(cdr(expressions)));
+        question = `${num1} + ${num2}`; break;
+      case 1: trueAnswer = String(car(expressions));
+        question = `${num1} - ${num2}`; break;
+      case 2: trueAnswer = String(cdr(cdr(expressions)));
+        question = `${num1} * ${num2}`; break;
       default: break;
     }
     return request => ((request === 'question') ? question : trueAnswer);

@@ -10,18 +10,14 @@ const findCommmonDevisor = (num1, num2) => {
   }
   return i;
 };
-const askName = () => {
-  const actualName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${actualName}!`);
-  return actualName;
-};
 const executionGame = (rounds, textTask, data, name) => {
   let namePlayer = name;
   if (name === undefined) {
     console.log('Welcome to the Brain Games!');
     console.log(textTask);
     console.log('');
-    namePlayer = askName();
+    namePlayer = readlineSync.question('May I have your name? ');
+    console.log(`Hello, ${namePlayer}!`);
   }
   const gameData = data();
   const question = gameData('question');
