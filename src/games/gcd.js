@@ -2,7 +2,7 @@ import { executionGame, getRandomInRange, findCommmonDevisor } from '..';
 
 export default () => {
   const textTask = 'Find the greatest common divisor of given numbers.';
-  const data = () => {
+  const makeQuestionAndAnswer = () => {
     const num1 = getRandomInRange(4, 30);
     const num2 = getRandomInRange(4, 30);
     const question = `${num1}  ${num2}`;
@@ -10,5 +10,5 @@ export default () => {
     return request => ((request === 'question') ? question : trueAnswer);
   };
   const rounds = 3;
-  executionGame(rounds, textTask, data);
+  executionGame(rounds, textTask, makeQuestionAndAnswer);
 };

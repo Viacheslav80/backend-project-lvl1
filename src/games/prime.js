@@ -2,7 +2,7 @@ import { executionGame, getRandomInRange } from '..';
 
 export default () => {
   const textTask = 'Answer "yes" if given number is prime. Otherwise answer "no"';
-  const data = () => {
+  const makeQuestionAndAnswer = () => {
     const number = getRandomInRange(1, 10);
     let trueAnswer = (number === 1) ? 'no' : 'yes';
     const question = `${number}`;
@@ -12,5 +12,5 @@ export default () => {
     return request => ((request === 'question') ? question : trueAnswer);
   };
   const rounds = 3;
-  executionGame(rounds, textTask, data);
+  executionGame(rounds, textTask, makeQuestionAndAnswer);
 };

@@ -5,7 +5,7 @@ import { executionGame, getRandomInRange } from '..';
 
 export default () => {
   const textTask = 'What is the result of the expression?';
-  const data = () => {
+  const makeQuestionAndAnswer = () => {
     const num1 = getRandomInRange(1, 15);
     const num2 = getRandomInRange(1, 15);
     const getNumOperation = getRandomInRange(0, 2);
@@ -24,5 +24,5 @@ export default () => {
     return request => ((request === 'question') ? question : trueAnswer);
   };
   const rounds = 3;
-  executionGame(rounds, textTask, data);
+  executionGame(rounds, textTask, makeQuestionAndAnswer);
 };

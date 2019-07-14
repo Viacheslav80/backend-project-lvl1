@@ -2,7 +2,7 @@ import { executionGame, getRandomInRange } from '..';
 
 export default () => {
   const textTask = 'What number is missing in the progression?';
-  const data = () => {
+  const makeQuestionAndAnswer = () => {
     const increment = getRandomInRange(1, 6);
     let startNum = getRandomInRange(1, 10);
     const indexRequiredNumber = getRandomInRange(1, 10);
@@ -17,5 +17,5 @@ export default () => {
     return request => ((request === 'question') ? question : trueAnswer);
   };
   const rounds = 3;
-  executionGame(rounds, textTask, data);
+  executionGame(rounds, textTask, makeQuestionAndAnswer);
 };

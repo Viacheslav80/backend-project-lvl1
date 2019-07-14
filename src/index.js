@@ -10,7 +10,7 @@ const findCommmonDevisor = (num1, num2) => {
   }
   return i;
 };
-const executionGame = (rounds, textTask, data, name) => {
+const executionGame = (rounds, textTask, makeQuestionAndAnswer, name) => {
   let namePlayer = name;
   if (name === undefined) {
     console.log('Welcome to the Brain Games!');
@@ -19,9 +19,9 @@ const executionGame = (rounds, textTask, data, name) => {
     namePlayer = readlineSync.question('May I have your name? ');
     console.log(`Hello, ${namePlayer}!`);
   }
-  const gameData = data();
-  const question = gameData('question');
-  const trueAnswer = gameData('trueAnswer');
+  const getQuestionAndAnswer = makeQuestionAndAnswer();
+  const question = getQuestionAndAnswer('question');
+  const trueAnswer = getQuestionAndAnswer('trueAnswer');
   console.log(`Question: ${question} `);
   const ans = readlineSync.question('Your answer: ');
   if (ans === trueAnswer) console.log('Correct!'); else {
@@ -29,7 +29,7 @@ const executionGame = (rounds, textTask, data, name) => {
     return;
   }
   if (rounds === 1) { console.log(`Congratulations, ${namePlayer}!`); return; }
-  executionGame(rounds - 1, textTask, data, namePlayer);
+  executionGame(rounds - 1, textTask, makeQuestionAndAnswer, namePlayer);
 };
 export {
   executionGame, isEven, getRandomInRange, findCommmonDevisor,
