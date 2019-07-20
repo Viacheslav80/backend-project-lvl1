@@ -1,12 +1,13 @@
-import { executionGame, isEven, getRandomInRange } from '..';
+import { cons } from '@hexlet/pairs';
+import { executionGame, getRandomInRange } from '..';
 
+const isEven = num => ((num % 2) ? 'no' : 'yes');
+const task = 'Answer "yes" if number even otherwise answer "no"';
+const makeQuestionAndAnswer = () => {
+  const question = getRandomInRange(1, 15);
+  const trueAnswer = isEven(question);
+  return cons(question, trueAnswer);
+};
 export default () => {
-  const textTask = 'Answer "yes" if number even otherwise answer "no"';
-  const makeQuestionAndAnswer = () => {
-    const question = getRandomInRange(1, 15);
-    const trueAnswer = isEven(question);
-    return request => ((request === 'question') ? question : trueAnswer);
-  };
-  const rounds = 3;
-  executionGame(rounds, textTask, makeQuestionAndAnswer);
+  executionGame(task, makeQuestionAndAnswer);
 };

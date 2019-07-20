@@ -1,14 +1,22 @@
-import { executionGame, getRandomInRange, findCommmonDevisor } from '..';
+import { cons } from '@hexlet/pairs';
+import { executionGame, getRandomInRange } from '..';
 
+const findCommmonDevisor = (num1, num2) => {
+  const minNumber = (num1 > num2) ? num2 : num1;
+  let i = minNumber;
+  for (; i > 0; i -= 1) {
+    if ((num1 % i === 0) && (num2 % i === 0)) break;
+  }
+  return i;
+};
+const task = 'Find the greatest common divisor of given numbers.';
+const makeQuestionAndAnswer = () => {
+  const num1 = getRandomInRange(4, 30);
+  const num2 = getRandomInRange(4, 30);
+  const question = `${num1}  ${num2}`;
+  const trueAnswer = String(findCommmonDevisor(num1, num2));
+  return cons(question, trueAnswer);
+};
 export default () => {
-  const textTask = 'Find the greatest common divisor of given numbers.';
-  const makeQuestionAndAnswer = () => {
-    const num1 = getRandomInRange(4, 30);
-    const num2 = getRandomInRange(4, 30);
-    const question = `${num1}  ${num2}`;
-    const trueAnswer = String(findCommmonDevisor(num1, num2));
-    return request => ((request === 'question') ? question : trueAnswer);
-  };
-  const rounds = 3;
-  executionGame(rounds, textTask, makeQuestionAndAnswer);
+  executionGame(task, makeQuestionAndAnswer);
 };
