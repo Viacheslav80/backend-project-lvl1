@@ -36,11 +36,11 @@ Game-calc
 
 Game-gcd
 
-[![asciicast](https://asciinema.org/a/OIE3Cg1fgLzciJ1RuY2UDntGA.svg)](https://asciinema.org/a/OIE3Cg1fgLzciJ1RuY2UDntGA)
+[![asciicast](https://asciinema.org/a/zzyUOLUyBduOe8vmOJbbFqyoX.svg)](https://asciinema.org/a/zzyUOLUyBduOe8vmOJbbFqyoX)
 
 Game-progression
 
-[![asciicast](https://asciinema.org/a/okg3B7aIP1rsNnKURO55R9qVO.svg)](https://asciinema.org/a/okg3B7aIP1rsNnKURO55R9qVO)
+[![asciicast](https://asciinema.org/a/f4v6uENOKuxlJQw0hkcijMkfb.svg)](https://asciinema.org/a/f4v6uENOKuxlJQw0hkcijMkfb)
 
 Game-prime
 
