@@ -27,16 +27,21 @@ $ brain-prograssion
 ```
 
 Game-even
+
 [![asciicast](https://asciinema.org/a/CcsHCEEz5XcF2xQtmRXP09Gj2.svg)](https://asciinema.org/a/CcsHCEEz5XcF2xQtmRXP09Gj2)
 
 Game-calc
+
 [![asciicast](https://asciinema.org/a/ebJYR66hU6MQk8PXKR6t59bnn.svg)](https://asciinema.org/a/ebJYR66hU6MQk8PXKR6t59bnn)
 
 Game-gcd
-[![asciicast](https://asciinema.org/a/BvvkOI8CBH7whxXThbeFRb8KS.svg)](https://asciinema.org/a/BvvkOI8CBH7whxXThbeFRb8KS)
+
+[![asciicast](https://asciinema.org/a/OIE3Cg1fgLzciJ1RuY2UDntGA.svg)](https://asciinema.org/a/OIE3Cg1fgLzciJ1RuY2UDntGA)
 
 Game-progression
-[![asciicast](https://asciinema.org/a/0282m2FikQYLO5UcZZiHJJIbg.svg)](https://asciinema.org/a/0282m2FikQYLO5UcZZiHJJIbg)
+
+[![asciicast](https://asciinema.org/a/okg3B7aIP1rsNnKURO55R9qVO.svg)](https://asciinema.org/a/okg3B7aIP1rsNnKURO55R9qVO)
 
 Game-prime
-[![asciicast](https://asciinema.org/a/okg3B7aIP1rsNnKURO55R9qVO.svg)](https://asciinema.org/a/okg3B7aIP1rsNnKURO55R9qVO)
+
+[![asciicast](https://asciinema.org/a/YeNYT2pzdBq527r02X1sUbwHG.svg)](https://asciinema.org/a/YeNYT2pzdBq527r02X1sUbwHG)
