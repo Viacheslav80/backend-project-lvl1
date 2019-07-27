@@ -1,7 +1,7 @@
 import { cons } from '@hexlet/pairs';
-import { executionGame, getRandomInRange } from '..';
+import { playGame, getRandomInRange } from '..';
 
-const findCommmonDevisor = (num1, num2) => {
+const findGreatestCommonDevisor = (num1, num2) => {
   const minNumber = (num1 > num2) ? num2 : num1;
   let i = minNumber;
   for (; i > 0; i -= 1) {
@@ -14,9 +14,9 @@ const makeQuestionAndAnswer = () => {
   const num1 = getRandomInRange(4, 30);
   const num2 = getRandomInRange(4, 30);
   const question = `${num1}  ${num2}`;
-  const trueAnswer = String(findCommmonDevisor(num1, num2));
+  const trueAnswer = String(findGreatestCommonDevisor(num1, num2));
   return cons(question, trueAnswer);
 };
 export default () => {
-  executionGame(task, makeQuestionAndAnswer);
+  playGame(task, makeQuestionAndAnswer);
 };

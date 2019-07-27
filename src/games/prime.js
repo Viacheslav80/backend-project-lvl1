@@ -1,5 +1,5 @@
 import { cons } from '@hexlet/pairs';
-import { executionGame, getRandomInRange } from '..';
+import { playGame, getRandomInRange } from '..';
 
 const task = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 const isPrime = (number) => {
@@ -15,5 +15,5 @@ const makeQuestionAndAnswer = () => {
   return cons(question, trueAnswer);
 };
 export default () => {
-  executionGame(task, makeQuestionAndAnswer);
+  playGame(task, makeQuestionAndAnswer);
 };

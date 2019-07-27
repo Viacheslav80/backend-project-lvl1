@@ -9,8 +9,8 @@ const welcomeAndGetName = (task) => {
   console.log(`Hello, ${namePlayer}!`);
   return namePlayer;
 };
-const getRandomInRange = (start, end) => (Math.floor(Math.random() * (end - start)) + start);
-const executionGame = (task, makeQuestionAndAnswer) => {
+const getRandomInRange = (start, end) => (Math.round(Math.random() * (end - start)) + start);
+const playGame = (task, makeQuestionAndAnswer) => {
   const namePlayer = welcomeAndGetName(task);
   for (let round = 1; round <= 3; round += 1) {
     const questionAndAnswer = makeQuestionAndAnswer();
@@ -26,5 +26,5 @@ const executionGame = (task, makeQuestionAndAnswer) => {
   console.log(`Congratulations, ${namePlayer}!`);
 };
 export {
-  executionGame, getRandomInRange,
+  playGame, getRandomInRange,
 };

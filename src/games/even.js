@@ -1,5 +1,5 @@
 import { cons } from '@hexlet/pairs';
-import { executionGame, getRandomInRange } from '..';
+import { playGame, getRandomInRange } from '..';
 
 const isEven = num => ((num % 2) ? 'no' : 'yes');
 const task = 'Answer "yes" if number even otherwise answer "no"';
@@ -9,5 +9,5 @@ const makeQuestionAndAnswer = () => {
   return cons(question, trueAnswer);
 };
 export default () => {
-  executionGame(task, makeQuestionAndAnswer);
+  playGame(task, makeQuestionAndAnswer);
 };

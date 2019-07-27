@@ -1,5 +1,5 @@
 import { cons } from '@hexlet/pairs';
-import { executionGame, getRandomInRange } from '..';
+import { playGame, getRandomInRange } from '..';
 
 const task = 'What number is missing in the progression?';
 const makeQuestionAndAnswer = () => {
@@ -18,5 +18,5 @@ const makeQuestionAndAnswer = () => {
   return cons(question, trueAnswer);
 };
 export default () => {
-  executionGame(task, makeQuestionAndAnswer);
+  playGame(task, makeQuestionAndAnswer);
 };
