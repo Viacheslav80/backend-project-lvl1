@@ -1,18 +1,15 @@
 import { car, cdr } from '@hexlet/pairs';
 import readlineSync from 'readline-sync';
 
-const welcomeAndGetName = (task) => {
+const getRandomInRange = (start, end) => (Math.round(Math.random() * (end - start)) + start);
+const allRound = 3;
+const playGame = (task, makeQuestionAndAnswer) => {
   console.log('Welcome to the Brain Games!');
   console.log(task);
   console.log('');
   const namePlayer = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${namePlayer}!`);
-  return namePlayer;
-};
-const getRandomInRange = (start, end) => (Math.round(Math.random() * (end - start)) + start);
-const playGame = (task, makeQuestionAndAnswer) => {
-  const namePlayer = welcomeAndGetName(task);
-  for (let round = 1; round <= 3; round += 1) {
+  for (let round = 1; round <= allRound; round += 1) {
     const questionAndAnswer = makeQuestionAndAnswer();
     const question = car(questionAndAnswer);
     const trueAnswer = cdr(questionAndAnswer);

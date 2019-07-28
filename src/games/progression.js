@@ -2,18 +2,18 @@ import { cons } from '@hexlet/pairs';
 import { playGame, getRandomInRange } from '..';
 
 const task = 'What number is missing in the progression?';
+const lengthProgression = 10;
+let trueAnswer = '';
 const makeQuestionAndAnswer = () => {
   const increment = getRandomInRange(1, 8);
-  let startNum = getRandomInRange(1, 10);
-  const lengthProgression = 10;
-  const indexRequiredNumber = getRandomInRange(1, lengthProgression);
-  let trueAnswer = '';
   let question = '';
+  let start = getRandomInRange(1, 10);
+  const indexRequiredNumber = getRandomInRange(1, lengthProgression);
   for (let i = 1; i <= lengthProgression; i += 1) {
     if (i === indexRequiredNumber) {
-      question += '  ..'; trueAnswer = String(startNum);
-    } else question = `${question}  ${startNum}`;
-    startNum += increment;
+      question = `${question}  ..`; trueAnswer = String(start);
+    } else question = `${question}  ${start}`;
+    start += increment;
   }
   return cons(question, trueAnswer);
 };
