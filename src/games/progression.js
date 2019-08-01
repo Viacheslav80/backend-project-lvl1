@@ -11,7 +11,8 @@ const makeQuestionAndAnswer = () => {
   const indexRequiredNumber = getRandomInRange(1, lengthProgression);
   for (let i = 1; i <= lengthProgression; i += 1) {
     if (i === indexRequiredNumber) {
-      question = `${question}  ..`; trueAnswer = String(start);
+      question = `${question}  ..`;
+      trueAnswer = String(start);
     } else question = `${question}  ${start}`;
     start += increment;
   }
