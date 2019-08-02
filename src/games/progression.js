@@ -3,19 +3,18 @@ import { playGame, getRandomInRange } from '..';
 
 const task = 'What number is missing in the progression?';
 const lengthProgression = 10;
-let trueAnswer = '';
 const makeQuestionAndAnswer = () => {
   const increment = getRandomInRange(1, 8);
   let question = '';
-  let start = getRandomInRange(1, 10);
+  const start = getRandomInRange(0, 9);
+  let element;
   const indexRequiredNumber = getRandomInRange(1, lengthProgression);
-  for (let i = 1; i <= lengthProgression; i += 1) {
-    if (i === indexRequiredNumber) {
-      question = `${question}  ..`;
-      trueAnswer = String(start);
-    } else question = `${question}  ${start}`;
-    start += increment;
+  for (let i = 0; i < lengthProgression; i += 1) {
+    element = start + increment * i;
+    if (i === indexRequiredNumber) element = '..';
+    question = `${question}  ${element}`;
   }
+  const trueAnswer = `${start + increment * indexRequiredNumber}`;
   return cons(question, trueAnswer);
 };
 export default () => {
