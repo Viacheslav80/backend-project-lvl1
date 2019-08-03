@@ -28,7 +28,7 @@ $ brain-prograssion
 
 Game-even
 
-[![asciicast](https://asciinema.org/a/CcsHCEEz5XcF2xQtmRXP09Gj2.svg)](https://asciinema.org/a/CcsHCEEz5XcF2xQtmRXP09Gj2)
+![](even.gif)
 
 Game-calc
 
