@@ -1,6 +1,6 @@
 import { cons } from '@hexlet/pairs';
-import { playGame } from '..';
-import { getRandomInRange } from '../utils';
+import playGame from '..';
+import getRandomInRange from '../utils';
 
 const task = 'What is the result of the expression?';
 const operations = ['+', '-', '*'];

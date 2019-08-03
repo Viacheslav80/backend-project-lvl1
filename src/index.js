@@ -2,7 +2,7 @@ import { car, cdr } from '@hexlet/pairs';
 import readlineSync from 'readline-sync';
 
 const allRound = 3;
-export const playGame = (task, makeQuestionAndAnswer) => {
+export default (task, makeQuestionAndAnswer) => {
   console.log('Welcome to the Brain Games!');
   console.log(task);
   console.log('');

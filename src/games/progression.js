@@ -1,6 +1,6 @@
 import { cons } from '@hexlet/pairs';
-import { playGame } from '..';
-import { getRandomInRange } from '../utils';
+import playGame from '..';
+import getRandomInRange from '../utils';
 
 const task = 'What number is missing in the progression?';
 const lengthProgression = 10;
