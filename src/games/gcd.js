@@ -1,5 +1,6 @@
 import { cons } from '@hexlet/pairs';
-import { playGame, getRandomInRange } from '..';
+import { playGame } from '..';
+import { getRandomInRange } from '../utils';
 
 const findGreatestCommonDevisor = (num1, num2) => {
   const minNumber = (num1 > num2) ? num2 : num1;

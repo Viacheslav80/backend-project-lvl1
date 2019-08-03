@@ -1,5 +1,6 @@
 import { cons } from '@hexlet/pairs';
-import { playGame, getRandomInRange } from '..';
+import { playGame } from '..';
+import { getRandomInRange } from '../utils';
 
 const task = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 const isPrime = (number) => {
