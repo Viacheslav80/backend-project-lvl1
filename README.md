@@ -32,7 +32,7 @@ Game-even
 
 Game-calc
 
-[![asciicast](https://asciinema.org/a/ebJYR66hU6MQk8PXKR6t59bnn.svg)](https://asciinema.org/a/ebJYR66hU6MQk8PXKR6t59bnn)
+![](calc.gif)
 
 Game-gcd
 
