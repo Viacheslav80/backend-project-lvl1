@@ -28,20 +28,20 @@ $ brain-prograssion
 
 Game-even
 
-![](even.gif)
+![](gif/even.gif)
 
 Game-calc
 
-![](calc.gif)
+![](gif/calc.gif)
 
 Game-gcd
 
-![](gcd.gif)
+![](gif/gcd.gif)
 
 Game-progression
 
-![](progression.gif)
+![](gif/progression.gif)
 
 Game-prime
 
-![](prime.gif)
+![](gif/prime.gif)
