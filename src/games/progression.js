@@ -6,16 +6,15 @@ const task = 'What number is missing in the progression?';
 const lengthProgression = 10;
 const makeQuestionAndAnswer = () => {
   const increment = getRandomInRange(1, 8);
-  let elementsQuestion = '';
+  let question = '';
   const start = getRandomInRange(1, 10);
   let element;
-  const indexMissingNumber = getRandomInRange(1, lengthProgression);
+  const missingElementIndex = getRandomInRange(1, lengthProgression);
   for (let i = 0; i < lengthProgression; i += 1) {
-    element = (i !== indexMissingNumber) ? (start + increment * i) : '..';
-    elementsQuestion = `${elementsQuestion}  ${element}`;
+    element = (i !== missingElementIndex) ? (start + increment * i) : '..';
+    question = (question === '') ? String(element) : `${question}  ${element}`;
   }
-  const question = elementsQuestion;
-  const trueAnswer = `${start + increment * indexMissingNumber}`;
+  const trueAnswer = String(start + increment * missingElementIndex);
   return cons(question, trueAnswer);
 };
 export default () => {

@@ -4,11 +4,12 @@ import getRandomInRange from '../utils';
 
 const findGreatestCommonDivisor = (num1, num2) => {
   const minNumber = (num1 > num2) ? num2 : num1;
-  let i = minNumber;
-  for (; i > 0; i -= 1) {
-    if ((num1 % i === 0) && (num2 % i === 0)) break;
+  for (let i = minNumber; i > 0; i -= 1) {
+    if ((num1 % i === 0) && (num2 % i === 0)) {
+      return i;
+    }
   }
-  return i;
+  return 1;
 };
 const task = 'Find the greatest common divisor of given numbers.';
 const makeQuestionAndAnswer = () => {

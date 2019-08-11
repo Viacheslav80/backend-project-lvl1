@@ -4,6 +4,7 @@ import getRandomInRange from '../utils';
 
 const isEven = num => num % 2;
 const task = 'Answer "yes" if number even otherwise answer "no"';
+
 const makeQuestionAndAnswer = () => {
   const question = getRandomInRange(1, 15);
   const trueAnswer = isEven(question) ? 'no' : 'yes';
