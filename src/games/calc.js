@@ -16,7 +16,7 @@ const makeQuestionAndAnswer = () => {
     case '*': trueAnswer = num1 * num2; break;
     default: break;
   }
-  const question = `${num1} ${operations[operation]} ${num2}`;
+  const question = `${num1} ${operation} ${num2}`;
   return cons(question, String(trueAnswer));
 };
 export default () => {
