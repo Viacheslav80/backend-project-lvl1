@@ -9,7 +9,7 @@ const makeQuestionAndAnswer = () => {
   let question = '';
   const start = getRandomInRange(1, 10);
   let element;
-  const missingElementIndex = getRandomInRange(1, lengthProgression);
+  const missingElementIndex = getRandomInRange(0, lengthProgression - 1);
   for (let i = 0; i < lengthProgression; i += 1) {
     element = (i !== missingElementIndex) ? (start + increment * i) : '..';
     question = (question === '') ? String(element) : `${question}  ${element}`;
